@@ -1,0 +1,354 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:  sans-serif;
+}
+
+.container{
+	max-width: 1280px;
+	margin:0 auto;
+	padding:0 2%;
+
+
+}
+#paragrafo{
+text-shadow: 1px 1px black;
+}
+
+#paragrafo2{
+
+	text-shadow: 1px 1px black;
+}
+
+.clear{
+	clear: both;
+}
+
+header{
+	padding: 8px 0;
+	background-color: #d4d7de;
+
+
+}
+
+.logo{
+	float:left;	
+}
+
+.logo h2{
+	font-weight: normal;
+	font-size: 23px;
+	color: goldenrod;
+	text-shadow: 1px 1px black;
+	cursor: pointer;
+}
+
+nav.menu-desktop li.selected{
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+
+nav.menu-desktop{
+
+	float:right;
+
+
+}
+
+nav.menu-desktop ul{
+	position: relative;
+	top:8px;
+
+}
+
+nav.menu-desktop li{
+	display: inline-block;
+	padding: 0 10px;
+	font-weight: lighter;
+}
+
+nav.menu-desktop a{
+	color:black;
+	text-decoration: none;
+
+}
+
+nav.menu-desktop a:hover{
+	text-decoration: underline;
+	color: goldenrod;
+
+}
+
+section.main-bg{
+	position:relative;
+	width: 100%;
+	padding:100px 0;
+	background-image: url(capa.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+
+
+
+
+}
+
+section.main-bg h2{
+	
+	text-align: center;
+
+
+
+
+}
+
+
+
+section.main-bg > .container{
+	position: relative;
+	z-index: 2;
+	text-align: justify;
+
+
+}
+.s23{
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.3);
+	top:0px;
+	left:0px;
+
+
+}
+
+
+
+
+
+section.main-bg h2{
+	font-size: 27px;
+	color:#8f7e4f;
+	text-shadow: 1px 1px black;
+
+}
+
+section.main-bg p{
+	font-size: 23px;
+	text-align: justify;
+	padding-top:16px;
+	color:white;
+
+}
+
+
+
+section.diferencias{
+	padding: 30px 0;
+	text-align: center;
+	
+
+}
+
+.line-text{
+	position: relative;
+	display: inline-block;
+	color:#8f7e4f;
+	text-shadow: 1px 1px black;
+
+}
+
+.line-text div{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 200px;
+	height: 6px;
+	background-color: #8f7e4f;
+	margin-top:-5px;
+}
+
+.line-text h2{
+	font-size: 27px;
+}
+
+.icones-diferencias{
+	margin-top: 35px;
+
+}
+
+.box-icone-single{
+	float:left;
+	width: 33.3%;
+	margin-bottom: 20px;
+	padding:0 20px;
+	
+	
+}
+
+.box-icone-single h2{
+	color:#8f7e4f;
+	text-shadow: 1px 1px black;
+	font-size: 40px;
+
+
+}
+
+.box-icone-single p{
+	color:#646464;
+	font-weight: lighter;
+	font-size: 19px;
+	text-align: justify;
+
+}
+
+section.sobre-equipe{
+	padding:30px 0;
+	background-color: rgba(225,225,225);
+}
+
+section.sobre-equipe > .container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+
+
+.equipe-container{
+	
+}
+
+.sobre-container{
+	width: 50%;
+
+}
+
+.sobre-container p{
+	color:black;
+	text-shadow: none;
+	text-align: justify;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+
+
+.foto{
+	display: inline-block;
+	border-radius: 50%;
+	width:90px;
+	height:90px;
+	float: left;
+	padding: 10px;
+	background-size: 100% 100%;
+}
+
+#doce1{
+	margin-top: 25px;
+	color:#8f7e4f;
+	text-shadow: 1px 1px black;
+	font-size: 25px;
+	
+
+}
+
+#pf{
+
+	font-size:17px;
+	margin-right: 90px;
+	font-style: italic;
+	text-align: justify;
+}
+
+.eitaporra{
+	background-color: rgba(90,90,90, .4);
+	width: 100vw;
+	height: 20vh;
+	margin-top: 100px;
+	padding-bottom: 100px;
+	text-align: center; 
+
+	
+
+}
+.eitaporra h2{
+	font-family: verdana;
+	font-size: 28px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px  white; 
+	margin: 10px;
+
+}
+
+.eitaporra2{
+	background-color:  rgba(0,0,0,.4);
+	width: 100vw;
+	height: 5vh;
+	padding: 10px;
+	text-align: center; 
+	cursor: pointer;
+	color: black;
+	text-shadow: 1px 1pxwhite;
+
+	
+}
+.eitaporra2 a{
+
+	color: #FFF0F5;
+	text-shadow: 1px 1px #2F4F4F;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+	.box-icone-single{
+		width: 100%;
+}
+
+section.diferencias{
+	width: 100%;
+}
+
+.line-text{
+	width: 100;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.foto{
+	width: 100%;
+
+}
+
+.sobre-equipe{
+
+	width: 100%;
+}
+
+.sobre-container{
+	width: 100%;
+	margin-top: 20px;
+
+}
+
+#doce1{
+
+	width: 100%;
+
+}
+
+
+
+	}
+}
+

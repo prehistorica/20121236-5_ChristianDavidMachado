@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contato</title>
+
+	<style type="text/css">
+
+	*{
+	margin:2px;
+	padding:2px;
+	box-sizing: border-box;
+	font-family:  sans-serif;
+}
+
+
+	.container{
+
+	font-weight: normal;
+	font-size: 22px;
+	color: goldenrod;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	background: whitesmoke;
+
+	
+
+
+	}
+
+	.botao{
+
+		font-size: 18px;
+		cursor: pointer;
+		color: whitesmoke;
+		background: black;
+		box-shadow: 1px 1px black;
+		border-radius: 5px;
+
+	}
+	.botao:hover{
+		color: burlywood;
+	}
+	#area{
+
+		width: 500px;
+		height: 400px;
+	}
+	#mapa{
+	text-align: center;
+	background: whitesmoke;
+	margin: -2px;
+	
+
+
+	}
+	legend{
+	font-family: sans-serif;
+	text-shadow: 1px 1px black;
+	font-size: 22px;
+	color: goldenrod;
+	}
+
+	#footer{
+	font-family: sans-serif;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	font-size: 22px;
+	color: goldenrod;
+	margin: 16px;
+	background: whitesmoke;
+
+
+	}
+
+	#footer2{
+	font-family: sans-serif;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	font-size: 22px;
+	color: goldenrod;
+	text-decoration: none;
+	background: whitesmoke;
+	margin: -2px;
+	
+
+
+
+	}
+
+	
+
+	#footer3{
+	font-family: sans-serif;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	font-size: 22px;
+	color: lightblue;
+	background: whitesmoke;
+	margin: -2px;
+	text-decoration: none;
+
+	
+
+
+	}
+#footer3:hover{
+
+	color : white;
+	text-shadow: 1px 1px black;
+}
+	
+
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<?php
+
+			session_star();
+			if(isset($_SESSION['erroCampoNome'])){
+				
+				}
+				<p>Todos os campos são obrigatórios!</p>
+		
+		<form method="GET" action="contato.php">
+			<label>Nome: <input type="text" name="nome" placeholder="Digite o seu Nome Completo"></label><br><br>
+			<label>E-mail: <input type="email" name="email" placeholder="Digite o seu e-mail"></label>
+			<br><br>
+			<legend>Deixa a sua mensagem</legend>
+			<textarea id="area" name="area"></textarea><br>
+			<input class="botao" type="submit" value="ENVIAR">
+
+
+		</form>
+
+	</div>
+
+	<div id="mapa">
+		<br><br>
+
+		<legend><h2>Localização</h2></legend>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14208.030920723162!2d-48.62830435984301!3d-27.093052175658592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b10cf4da0413%3A0x231d20d09ad9775c!2sItapema%2C%20SC%2C%2088220-000!5e0!3m2!1spt-BR!2sbr!4v1628382697174!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
+
+<footer>
+
+	<h3 id="footer">Entre em Contato pelo Fone: (47) 9-9999-9999</h3>
+	
+	<center><a id="footer3" href="mapachris.html">Voltar ao Menu Principal</a></center>
+</footer>
+</body>
+</html>

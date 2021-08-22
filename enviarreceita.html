@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Enviar Receita</title>
+
+	<style type="text/css">
+
+	*{
+	margin:2px;
+	padding:2px;
+	box-sizing: border-box;
+	font-family:  sans-serif;
+
+}
+
+
+	.container{
+
+	font-weight: normal;
+	font-size: 42px;
+	color: goldenrod;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	background: whitesmoke;
+
+	
+
+
+	}
+
+	legend{
+	font-family: sans-serif;
+	text-shadow: 1px 1px black;
+	font-size: 24px;
+	color: goldenrod;
+	}
+
+	#area{
+
+		width: 500px;
+		height: 400px;
+	}
+
+	.btn{
+
+		cursor: pointer;
+		color: lightcoral;
+		font-size: 24px;
+		border-bottom: 5px solid rgba(1,1,1, 1.4);
+		border-top: 5px solid rgba(2,2,2, 2.3);
+		border-left:5px solid rgba(3,3,3, 0.3); 
+		border-right: 5px solid rgba(4,4,4, 0.4);
+		border-radius: 8px;
+		background-color: #262626;
+	}
+
+	.btn:hover{
+		color: white;
+		background-color: black;
+	}
+
+	
+
+.eitaporra2{
+	background-color:  rgba(0,0,0,.4);
+	width: 99vw;
+	height: 7vh;
+	padding:0 auto;
+	border-radius: 5px;
+	text-align: center; 
+	cursor: pointer;
+	color: #838B83;
+
+	
+}
+
+.eitaporra2 a h3:hover{
+	color: #FF6A6A;
+	text-shadow: 1px 1px #838B83;
+}
+
+@media screen and (max-width 768){
+	.container{
+		max-width: 100%;
+
+	}
+	#area{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+</style>
+</head>
+<body>
+
+	<div class="container">
+	<form   method="POST" action="enviarreceita.php">
+		<?php
+
+			session_start();
+			if(isset($_SESSION['erroCampoNome'])){
+				
+				}
+				<p>OS campos Nome e E-mail são obrigatórios!</p>
+
+		<label>Nome: </label><input type="text" placeholder="Digite seu nome" name="nome"><br>
+		<label>E-mail:</label><input type="email" placeholder="Digite o seu e-mail" name="email"><br>
+		<label>Enviar Arquivo</label><input type="file" name="arquivo"><br>
+		<br><br>
+		<legend>Deixa a sua mensagem</legend>
+		<textarea id="area" name="area"></textarea><br>
+		<input class="btn" type="submit" name="btn" value="ENVIAR"><br>
+		
+
+	</form>
+</div>
+
+<footer class="eitaporra2">
+<a href="mapachris.html" style="text-decoration:none; color: white; text-shadow: 1px 1px #838B83;"><h3>Voltar ao Menu Inicial</h3></a>
+				<br>
+				<h4>Todos os Direitos Reservados - 2021 ® </h4>
+
+</footer>
+
+
+
+</body>
+</html>

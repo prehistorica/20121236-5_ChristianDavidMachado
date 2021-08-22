@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Brigadeiro</title>
+
+	<style type="text/css">
+	
+	*{
+		background-color:whitesmoke;
+		box-sizing: border-box;
+		font-family:  sans-serif;
+		
+
+	}
+
+	.container{
+	font-weight: normal;
+	font-size: 22px;
+	color: goldenrod;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	background: whitesmoke;
+
+
+}
+
+#brigadeiro{
+  
+
+  text-align: center;
+  text-decoration: none;
+	font-family: sans-serif;
+  color:    #d4d7de;
+  text-shadow: 1px 1px #262626 ;
+ 	
+
+  
+}
+
+#brigadeiro img{
+
+	border-radius: 12px;
+
+}
+
+.comprar{
+	
+	font-family: cursive;
+	font-size: 20px;
+	color: #838B83;
+	text-shadow: 1px 1px blanchedalmond;
+	cursor: pointer;
+	margin-bottom: 30px;
+
+}
+
+
+
+input.comprar:hover{
+
+	color: black;
+}
+
+.endereco{
+	font-weight: normal;
+	font-size: 22px;
+	color: goldenrod;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	background: whitesmoke;
+
+
+}
+
+.endereco2{
+margin-top: 30px;
+
+text-align: center;
+font-size: 28px;
+
+}
+
+.endereco2 input{
+font-size: 28px;
+margin-top: 23px;
+
+
+
+}
+
+textarea{
+	width: 500px;
+		height: 400px;
+
+}
+
+.eitaporra2{
+	background-color:  #838B83;
+	padding: 10px;
+	text-align: center;
+	 cursor: pointer;
+	color:  #d4d7de;
+	border-radius: 8px;
+
+	
+}
+
+.eitaporra2 a{
+
+	color:#262626;
+	text-decoration: none;
+}
+
+.eitaporra2 a:hover{
+	color: whitesmoke;
+	text-shadow: 1px 1px black;
+	transition-delay: 0.7s;
+}
+
+.clear{
+	clear: both;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="endereco">
+	<form method="POST" action="produtobrigadeiro.php" class="endereco2">
+
+		<?php
+
+			session_start();
+			if(isset($_SESSION['erroCampoNome'])){
+				
+				} <p>Os Campos <strong>Nome,E-mail, Endereço e Quantidade</strong> são obrigatórios!</p>
+
+		<label>Nome: </label><input type="text" name="nome" ><br>
+		<label>E-mail: </label><input type="email" name="email"><br><br>
+		<label>Endereço: </label><input type="text" name="endereco"><br><br>
+		<legend>Deixa a sua Observação (se for necessária): </legend><br>
+		<textarea id="area" name="area"></textarea><br>
+		<h3>Compre Aqui seu Brigadeiro</h3>
+		<img height="420" width="510" id="brigadeiro"src="doce1.jpg">
+		<hr>
+<hr>
+
+	<div class="comprar">
+		<form method="POST" action="produtobrigadeiro.php">
+		<label >Quantidade&nbsp</label><input class="comprar" type="number" name="quantidade"><br>
+		<label>Valor R$1,00 a Unidade &nbsp</label><input class="comprar" type="text"  name="valor"><br>
+		<input class="comprar" type="submit" value="Comprar" >
+	</form>
+
+	</form>
+
+
+
+</div>
+
+
+	
+
+
+	
+	
+</div>
+
+
+
+
+<div class="clear"></div>
+
+    
+
+<footer class="eitaporra2">
+
+
+				<a href="mapachris.html" ><h3>Voltar ao Menu Inicial</h3></a>
+				<hr >
+				<br>
+				<h4 style="color:#262626;">Todos os Direitos Reservados - 2021 ® </h4>
+
+
+
+			</div>
+</footer>
+
+
+</body>
+</html>
